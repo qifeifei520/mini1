@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+Your name: <input type="text" ng-model="yourname" placeholder="World">
+<hr>
+Hello {{yourname || 'World'}}
+<input type="date"
+       ng-model="string"
+       [name="string"]
+       [min="string"]
+       [max="string"]
+       [ng-min=""]
+       [ng-max=""]
+       [required="string"]
+       [ng-required="string"]
+       [ng-change="string"]>
+<div ng-controller="WelcomeController">
+    {{greeting}}
+</div>
+<script>
+    angular.element(document).find()
+    $document.find().document.querySelectorAll();
+    var app = angular.module('demo', [])
+            .controller('WelcomeController', function($scope) {
+                $scope.greeting = 'Welcome!111';
+            });
+    angular.bootstrap(document, ['demo']);
+</script>
+</body>
+</html>
